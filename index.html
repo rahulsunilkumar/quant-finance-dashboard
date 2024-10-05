@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quant Finance Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Rahul Sunilkumar's Quant Finance Projects</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #1b1b1b;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, p {
             text-align: center;
-            padding: 50px;
         }
-        a {
-            display: inline-block;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .button-container {
             margin: 20px;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #007acc;
-            text-decoration: none;
-            border-radius: 8px;
         }
-        a:hover {
-            background-color: #005a99;
+        .button {
+            background-color: #005b96;
+            color: #fff;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #002f4f;
+        }
+        .description {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <h1>Quant Finance Dashboard</h1>
-    <p>Explore our projects that showcase financial data analysis and optimization using advanced tools.</p>
-    <a href="https://qrm-rsunilkumar-kmeans.streamlit.app/" target="_blank">Asset Clustering App</a>
-    <a href="https://qrm-rsunilkumar-portfolio-optimization.streamlit.app" target="_blank">Portfolio Optimization App</a>
+    <div class="container">
+        <h1>Welcome to Rahul Sunilkumar's Quant Finance Projects Dashboard</h1>
+        <p>Explore the applications below, showcasing machine learning and finance-related skills.</p>
+        
+        <div class="button-container">
+            <a class="button" href="https://qrm-rsunilkumar-portfolio-optimization.streamlit.app" target="_blank">Portfolio Optimization Project</a>
+            <div class="description">
+                <h2>Portfolio Optimization</h2>
+                <p>This project demonstrates the use of machine learning models for optimizing a portfolio of assets. Key skills include data analysis, optimization techniques, and financial modeling using Python. You can explore various financial assets and see how portfolio metrics like Sharpe Ratio, Expected Return, and others change.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a class="button" href="https://qrm-rsunilkumar-kmeans.streamlit.app/" target="_blank">Asset Clustering Using K-Means</a>
+            <div class="description">
+                <h2>Asset Clustering Using K-Means</h2>
+                <p>This project applies K-Means clustering on financial asset returns to group similar stocks. It showcases skills in machine learning, clustering analysis, and feature engineering. The project helps explore how similar different financial instruments are, aiding in the understanding of diversification opportunities.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; margin-top: 50px;">Created by Rahul Sunilkumar | 2024</p>
+    </footer>
 </body>
 </html>
